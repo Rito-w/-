@@ -1,0 +1,223 @@
+<mxfile host="65bd71144e">
+    <diagram id="threat-model" name="变电设备威胁建模图">
+        <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                
+                <!-- 标题 -->
+                <mxCell id="title" value="变电设备故障威胁建模与风险分析" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#D32F2F;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="30" width="600" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- 外部威胁边界 -->
+                <mxCell id="external-boundary" value="外部威胁边界" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F44336;strokeWidth=3;dashed=1;fontSize=14;fontStyle=1;arcSize=5;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="100" width="1300" height="750" as="geometry"/>
+                </mxCell>
+                
+                <!-- 变电站核心区域 -->
+                <mxCell id="core-area" value="变电站核心区域" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#4CAF50;strokeWidth=2;fontSize=12;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="200" width="900" height="500" as="geometry"/>
+                </mxCell>
+                
+                <!-- 主要资产 -->
+                <!-- 主变压器 -->
+                <mxCell id="main-transformer" value="主变压器&#xa;Main Transformer&#xa;[关键资产]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#FF9800;fontSize=11;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="280" width="120" height="80" as="geometry"/>
+                </mxCell>
+                
+                <!-- 开关设备 -->
+                <mxCell id="switchgear" value="开关设备&#xa;Switchgear&#xa;[关键资产]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#FF9800;fontSize=11;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="280" width="120" height="80" as="geometry"/>
+                </mxCell>
+                
+                <!-- 保护控制系统 -->
+                <mxCell id="protection-control" value="保护控制系统&#xa;Protection Control&#xa;[关键资产]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#FF9800;fontSize=11;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="280" width="120" height="80" as="geometry"/>
+                </mxCell>
+                
+                <!-- 监控系统 -->
+                <mxCell id="scada-system" value="SCADA系统&#xa;监控与数据采集&#xa;[信息资产]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#2196F3;fontSize=11;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="280" width="120" height="80" as="geometry"/>
+                </mxCell>
+                
+                <!-- 通信网络 -->
+                <mxCell id="communication" value="通信网络&#xa;Communication Network&#xa;[信息资产]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#2196F3;fontSize=11;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="420" width="200" height="60" as="geometry"/>
+                </mxCell>
+                
+                <!-- 数据库服务器 -->
+                <mxCell id="database" value="历史数据库&#xa;Historical Database&#xa;[信息资产]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#2196F3;fontSize=11;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="420" width="120" height="60" as="geometry"/>
+                </mxCell>
+                
+                <!-- 威胁源 -->
+                <!-- 自然灾害 -->
+                <mxCell id="natural-disaster" value="自然灾害&#xa;Natural Disasters" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffebee;strokeColor=#F44336;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="150" width="100" height="70" as="geometry"/>
+                </mxCell>
+                
+                <!-- 人为错误 -->
+                <mxCell id="human-error" value="人为错误&#xa;Human Error" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#FF9800;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="250" width="100" height="70" as="geometry"/>
+                </mxCell>
+                
+                <!-- 设备老化 -->
+                <mxCell id="equipment-aging" value="设备老化&#xa;Equipment Aging" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#9C27B0;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="350" width="100" height="70" as="geometry"/>
+                </mxCell>
+                
+                <!-- 网络攻击 -->
+                <mxCell id="cyber-attack" value="网络攻击&#xa;Cyber Attack" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffebee;strokeColor=#F44336;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="200" width="100" height="70" as="geometry"/>
+                </mxCell>
+                
+                <!-- 恶意软件 -->
+                <mxCell id="malware" value="恶意软件&#xa;Malware" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffebee;strokeColor=#F44336;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="300" width="100" height="70" as="geometry"/>
+                </mxCell>
+                
+                <!-- 内部威胁 -->
+                <mxCell id="insider-threat" value="内部威胁&#xa;Insider Threat" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#FF9800;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="400" width="100" height="70" as="geometry"/>
+                </mxCell>
+                
+                <!-- 威胁场景 -->
+                <!-- 场景1 -->
+                <mxCell id="scenario1" value="威胁场景1&#xa;雷击导致主变故障" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcdd2;strokeColor=#D32F2F;fontSize=10;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="540" width="140" height="50" as="geometry"/>
+                </mxCell>
+                
+                <!-- 场景2 -->
+                <mxCell id="scenario2" value="威胁场景2&#xa;误操作导致停电" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#F57C00;fontSize=10;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="540" width="140" height="50" as="geometry"/>
+                </mxCell>
+                
+                <!-- 场景3 -->
+                <mxCell id="scenario3" value="威胁场景3&#xa;网络入侵篡改数据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcdd2;strokeColor=#D32F2F;fontSize=10;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="540" width="140" height="50" as="geometry"/>
+                </mxCell>
+                
+                <!-- 场景4 -->
+                <mxCell id="scenario4" value="威胁场景4&#xa;设备老化引发连锁故障" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#8E24AA;fontSize=10;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="540" width="140" height="50" as="geometry"/>
+                </mxCell>
+                
+                <!-- 控制措施 -->
+                <!-- 物理防护 -->
+                <mxCell id="physical-protection" value="物理防护&#xa;Physical Protection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4CAF50;fontSize=10;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="640" width="120" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- 访问控制 -->
+                <mxCell id="access-control" value="访问控制&#xa;Access Control" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4CAF50;fontSize=10;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="640" width="120" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- 监控告警 -->
+                <mxCell id="monitoring-alarm" value="监控告警&#xa;Monitoring & Alarm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4CAF50;fontSize=10;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="640" width="120" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- 备份恢复 -->
+                <mxCell id="backup-recovery" value="备份恢复&#xa;Backup & Recovery" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4CAF50;fontSize=10;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="640" width="120" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- 应急预案 -->
+                <mxCell id="emergency-plan" value="应急预案&#xa;Emergency Plan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4CAF50;fontSize=10;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="840" y="640" width="120" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- RAG+CoT分析系统 -->
+                <mxCell id="rag-cot-system" value="RAG+CoT&#xa;智能分析系统&#xa;[新增防护]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#2E7D32;fontSize=11;fontStyle=1;arcSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="500" width="160" height="80" as="geometry"/>
+                </mxCell>
+                
+                <!-- 威胁攻击路径 -->
+                <!-- 自然灾害 -> 主变 -->
+                <mxCell id="threat1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#F44336;dashed=1;" parent="1" source="natural-disaster" target="main-transformer" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                <!-- 人为错误 -> 开关设备 -->
+                <mxCell id="threat2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#FF9800;dashed=1;" parent="1" source="human-error" target="switchgear" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                <!-- 设备老化 -> 保护控制 -->
+                <mxCell id="threat3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9C27B0;dashed=1;" parent="1" source="equipment-aging" target="protection-control" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                <!-- 网络攻击 -> SCADA -->
+                <mxCell id="threat4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#F44336;dashed=1;" parent="1" source="cyber-attack" target="scada-system" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                <!-- 恶意软件 -> 通信网络 -->
+                <mxCell id="threat5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#F44336;dashed=1;" parent="1" source="malware" target="communication" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                <!-- 内部威胁 -> 数据库 -->
+                <mxCell id="threat6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#FF9800;dashed=1;" parent="1" source="insider-threat" target="database" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                <!-- 防护关系 -->
+                <!-- RAG+CoT系统保护各个资产 -->
+                <mxCell id="protect1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#4CAF50;" parent="1" source="rag-cot-system" target="main-transformer" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="protect2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#4CAF50;" parent="1" source="rag-cot-system" target="switchgear" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="protect3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#4CAF50;" parent="1" source="rag-cot-system" target="protection-control" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                
+                <!-- 风险等级标识 -->
+                <mxCell id="risk-legend" value="风险等级" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="750" width="80" height="30" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="high-risk" value="高风险" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcdd2;strokeColor=#D32F2F;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="750" width="60" height="30" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="medium-risk" value="中风险" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#F57C00;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="750" width="60" height="30" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="low-risk" value="低风险" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#8E24AA;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="750" width="60" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- 防护措施图例 -->
+                <mxCell id="protection-legend" value="防护措施" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="750" width="80" height="30" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="protection-sample" value="已部署" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#4CAF50;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="750" width="60" height="30" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="new-protection" value="新增" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#2E7D32;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="750" width="60" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- 分析结果区域 -->
+                <mxCell id="analysis-area" value="威胁分析结果" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#757575;fontSize=12;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="500" width="300" height="180" as="geometry"/>
+                </mxCell>
+                
+                <mxCell id="analysis-text" value="关键发现:&#xa;1. 主变压器面临自然灾害高风险&#xa;2. SCADA系统存在网络安全隐患&#xa;3. 人为操作错误需加强培训&#xa;4. 设备老化需预防性维护&#xa;&#xa;建议措施:&#xa;• 部署RAG+CoT智能分析系统&#xa;• 加强网络安全防护&#xa;• 完善应急预案&#xa;• 定期风险评估" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="1020" y="520" width="260" height="140" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

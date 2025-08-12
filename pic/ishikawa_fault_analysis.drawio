@@ -1,0 +1,151 @@
+<mxfile host="65bd71144e">
+    <diagram id="fault-analysis" name="变电设备故障鱼骨图分析">
+        <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                
+                <!-- 主干 -->
+                <mxCell id="main-spine" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;strokeColor=#2E7D32;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="400" as="sourcePoint"/>
+                        <mxPoint x="900" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- 问题框 -->
+                <mxCell id="problem-box" value="变电设备故障&#xa;Equipment Failure" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#d32f2f;fontSize=16;fontStyle=1;arcSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="920" y="370" width="160" height="60" as="geometry"/>
+                </mxCell>
+                
+                <!-- 人员因素 -->
+                <mxCell id="people-branch" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#1976D2;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="300" y="300" as="sourcePoint"/>
+                        <mxPoint x="450" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="people-label" value="人员因素&#xa;Personnel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1976D2;fontSize=12;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="270" width="100" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- 人员子因素 -->
+                <mxCell id="training" value="培训不足" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1976D2;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="200" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="experience" value="经验不足" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1976D2;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="240" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="operation" value="操作失误" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1976D2;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="200" width="80" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- 设备因素 -->
+                <mxCell id="equipment-branch" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#388E3C;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="550" y="300" as="sourcePoint"/>
+                        <mxPoint x="450" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="equipment-label" value="设备因素&#xa;Equipment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#388E3C;fontSize=12;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="270" width="100" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- 设备子因素 -->
+                <mxCell id="aging" value="设备老化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#388E3C;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="200" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="defect" value="制造缺陷" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#388E3C;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="200" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="overload" value="过载运行" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#388E3C;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="240" width="80" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- 环境因素 -->
+                <mxCell id="environment-branch" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#F57C00;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="750" y="300" as="sourcePoint"/>
+                        <mxPoint x="650" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="environment-label" value="环境因素&#xa;Environment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#F57C00;fontSize=12;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="270" width="100" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- 环境子因素 -->
+                <mxCell id="weather" value="恶劣天气" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#F57C00;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="200" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="temperature" value="温度异常" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#F57C00;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="790" y="200" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="humidity" value="湿度过高" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#F57C00;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="240" width="80" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- 维护因素 -->
+                <mxCell id="maintenance-branch" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#7B1FA2;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="300" y="500" as="sourcePoint"/>
+                        <mxPoint x="450" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="maintenance-label" value="维护因素&#xa;Maintenance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#7B1FA2;fontSize=12;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="530" width="100" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- 维护子因素 -->
+                <mxCell id="schedule" value="维护周期" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7B1FA2;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="580" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="quality" value="维护质量" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7B1FA2;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="580" width="80" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- 管理因素 -->
+                <mxCell id="management-branch" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#D32F2F;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="550" y="500" as="sourcePoint"/>
+                        <mxPoint x="450" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="management-label" value="管理因素&#xa;Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffebee;strokeColor=#D32F2F;fontSize=12;fontStyle=1;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="530" width="100" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- 管理子因素 -->
+                <mxCell id="procedure" value="制度缺失" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#D32F2F;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="580" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="monitoring" value="监控不力" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#D32F2F;fontSize=10;arcSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="580" width="80" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- 标题 -->
+                <mxCell id="title" value="变电设备故障根因分析图 (鱼骨图)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="50" width="400" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- 连接线 -->
+                <mxCell id="connect1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#1976D2;" parent="1" source="training" target="people-label" edge="1"/>
+                <mxCell id="connect2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#1976D2;" parent="1" source="experience" target="people-label" edge="1"/>
+                <mxCell id="connect3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#1976D2;" parent="1" source="operation" target="people-label" edge="1"/>
+                
+                <mxCell id="connect4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#388E3C;" parent="1" source="aging" target="equipment-label" edge="1"/>
+                <mxCell id="connect5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#388E3C;" parent="1" source="defect" target="equipment-label" edge="1"/>
+                <mxCell id="connect6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#388E3C;" parent="1" source="overload" target="equipment-label" edge="1"/>
+                
+                <mxCell id="connect7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#F57C00;" parent="1" source="weather" target="environment-label" edge="1"/>
+                <mxCell id="connect8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#F57C00;" parent="1" source="temperature" target="environment-label" edge="1"/>
+                <mxCell id="connect9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#F57C00;" parent="1" source="humidity" target="environment-label" edge="1"/>
+                
+                <mxCell id="connect10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#7B1FA2;" parent="1" source="schedule" target="maintenance-label" edge="1"/>
+                <mxCell id="connect11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#7B1FA2;" parent="1" source="quality" target="maintenance-label" edge="1"/>
+                
+                <mxCell id="connect12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#D32F2F;" parent="1" source="procedure" target="management-label" edge="1"/>
+                <mxCell id="connect13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#D32F2F;" parent="1" source="monitoring" target="management-label" edge="1"/>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
