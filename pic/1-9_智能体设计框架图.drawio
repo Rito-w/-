@@ -1,0 +1,116 @@
+<mxfile host="65bd71144e">
+    <diagram name="智能体设计框架图" id="agent-framework">
+        <mxGraphModel dx="1185" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="800" math="0" shadow="1">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="perception_layer" value="感知层" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#E8F5E8;strokeColor=#82B366;fontColor=#333333;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="100" width="1200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="sensors" value="故障现象感知      文档内容理解      历史案例分析      专家知识获取      环境状态监测" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=12;fontColor=#333333;align=center;" parent="perception_layer" vertex="1">
+                    <mxGeometry y="30" width="1200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="cognition_layer" value="认知层" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#333333;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="230" width="1200" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="cognitive_modules" value="" style="html=1;fillColor=none;strokeColor=none;" parent="cognition_layer" vertex="1">
+                    <mxGeometry y="30" width="1200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="semantic_understanding" value="语义理解模块" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#333333;fontSize=11;shadow=1;" parent="cognitive_modules" vertex="1">
+                    <mxGeometry x="50" y="20" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="context_modeling" value="上下文建模" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#333333;fontSize=11;shadow=1;" parent="cognitive_modules" vertex="1">
+                    <mxGeometry x="230" y="20" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="causal_reasoning" value="因果推理引擎" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#333333;fontSize=11;shadow=1;" parent="cognitive_modules" vertex="1">
+                    <mxGeometry x="410" y="20" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="knowledge_retrieval" value="知识检索引擎" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#333333;fontSize=11;shadow=1;" parent="cognitive_modules" vertex="1">
+                    <mxGeometry x="590" y="20" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="learning_adaptation" value="学习适应模块" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#333333;fontSize=11;shadow=1;" parent="cognitive_modules" vertex="1">
+                    <mxGeometry x="770" y="20" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="uncertainty_handling" value="不确定性处理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#333333;fontSize=11;shadow=1;" parent="cognitive_modules" vertex="1">
+                    <mxGeometry x="950" y="20" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="cognitive_desc" value="BERT语义理解    场景特征建模    CoT推理链条    RAG知识增强    强化学习优化    概率推理评估" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#666666;align=center;" parent="cognitive_modules" vertex="1">
+                    <mxGeometry x="50" y="70" width="1040" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="decision_layer" value="决策层" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#E1F5FE;strokeColor=#6C8EBF;fontColor=#333333;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="410" width="1200" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="decision_modules" value="" style="html=1;fillColor=none;strokeColor=none;" parent="decision_layer" vertex="1">
+                    <mxGeometry y="30" width="1200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="strategy_generation" value="策略生成器" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#333333;fontSize=11;shadow=1;" parent="decision_modules" vertex="1">
+                    <mxGeometry x="100" y="20" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="multi_objective" value="多目标优化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#333333;fontSize=11;shadow=1;" parent="decision_modules" vertex="1">
+                    <mxGeometry x="300" y="20" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="risk_assessment" value="风险评估器" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#333333;fontSize=11;shadow=1;" parent="decision_modules" vertex="1">
+                    <mxGeometry x="500" y="20" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="plan_optimization" value="方案优化器" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#333333;fontSize=11;shadow=1;" parent="decision_modules" vertex="1">
+                    <mxGeometry x="700" y="20" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="execution_control" value="执行控制器" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#333333;fontSize=11;shadow=1;" parent="decision_modules" vertex="1">
+                    <mxGeometry x="900" y="20" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="decision_desc" value="智能策略生成    安全经济平衡    系统风险分析    资源配置优化    流程执行监控" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#666666;align=center;" parent="decision_modules" vertex="1">
+                    <mxGeometry x="100" y="70" width="950" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="execution_layer" value="执行层" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#333333;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="590" width="1200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="actuators" value="检修指令生成      人员任务分配      设备操作控制      安全措施执行      质量监控反馈" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=12;fontColor=#333333;align=center;" parent="execution_layer" vertex="1">
+                    <mxGeometry y="30" width="1200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="agent_core" value="智能体核心" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#F8CECC;strokeColor=#B85450;fontColor=#333333;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="1350" y="250" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="llm_engine" value="大语言模型引擎" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontColor=#333333;fontSize=11;shadow=1;" parent="agent_core" vertex="1">
+                    <mxGeometry x="10" y="40" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="memory_system" value="记忆系统" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontColor=#333333;fontSize=11;shadow=1;" parent="agent_core" vertex="1">
+                    <mxGeometry x="10" y="80" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="planning_module" value="规划模块" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontColor=#333333;fontSize=11;shadow=1;" parent="agent_core" vertex="1">
+                    <mxGeometry x="10" y="120" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="tool_interface" value="工具接口" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontColor=#333333;fontSize=11;shadow=1;" parent="agent_core" vertex="1">
+                    <mxGeometry x="10" y="160" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="connect1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=3;endArrow=classic;" parent="1" source="perception_layer" target="cognition_layer" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="connect2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=3;endArrow=classic;" parent="1" source="cognition_layer" target="decision_layer" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="connect3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=3;endArrow=classic;" parent="1" source="decision_layer" target="execution_layer" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="feedback1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF6B6B;strokeWidth=2;endArrow=classic;dashed=1;" parent="1" source="execution_layer" target="perception_layer" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1400" y="640" as="sourcePoint"/>
+                        <mxPoint x="1400" y="150" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1350" y="640"/>
+                            <mxPoint x="1350" y="150"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="agent_connect" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#B85450;strokeWidth=2;endArrow=classic;dashed=1;" parent="1" source="agent_core" target="cognition_layer" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="layer_flow" value="信息流向: 感知 → 认知 → 决策 → 执行" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#4284F3;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="720" width="300" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="feedback_flow" value="反馈学习: 执行结果 → 感知优化" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#FF6B6B;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="950" y="720" width="250" height="25" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

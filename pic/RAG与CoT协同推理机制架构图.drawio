@@ -1,0 +1,271 @@
+<mxfile host="Electron" modified="2024-01-01T00:00:00.000Z" agent="5.0" version="21.0.0" etag="example" type="device">
+  <diagram id="RAGCoTArchitecture" name="RAG与CoT协同推理机制架构图">
+    <mxGraphModel dx="1422" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- 背景容器 -->
+        <mxCell id="bg-container" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F6F6F6;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="1080" height="780" as="geometry"/>
+        </mxCell>
+        <!-- 标题栏 -->
+        <mxCell id="header-bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4DA1F5;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="1080" height="45" as="geometry"/>
+        </mxCell>
+        <!-- 标题 -->
+        <mxCell id="title" value="RAG与CoT协同推理机制架构图" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="110" y="40" width="940" height="45" as="geometry" />
+        </mxCell>
+        
+        <!-- 多源输入层 -->
+        <mxCell id="inputLayer" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#dddddd;shadow=1;strokeWidth=1;arcSize=15;" vertex="1" parent="1">
+          <mxGeometry x="200" y="110" width="880" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="inputLayer-label" value="多源输入层" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B3E5FC;strokeColor=#dddddd;fontSize=15;fontStyle=1;fontColor=#333333;shadow=1;strokeWidth=1;align=center;verticalAlign=middle;arcSize=15;" vertex="1" parent="1">
+          <mxGeometry x="60" y="110" width="120" height="85" as="geometry" />
+        </mxCell>
+        
+        <!-- 输入组件 -->
+        <mxCell id="faultQuery" value="故障查询" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="225" y="130" width="100" height="45" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="contextInfo" value="上下文信息" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="345" y="130" width="100" height="45" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="historicalData" value="历史数据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="465" y="130" width="100" height="45" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="expertKnowledge" value="专家知识" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="585" y="130" width="100" height="45" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="equipmentStatus" value="设备状态" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="705" y="130" width="100" height="45" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="environmentalFactors" value="环境因素" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="825" y="130" width="100" height="45" as="geometry" />
+        </mxCell>
+        
+        <!-- RAG模块 -->
+        <mxCell id="ragModule" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;arcSize=15;shadow=1;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="230" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="rag-label" value="RAG 推理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;fontStyle=1;arcSize=15;" vertex="1" parent="1">
+          <mxGeometry x="242.5" y="230" width="190" height="24" as="geometry" />
+        </mxCell>
+        
+        <!-- RAG组件 -->
+        <mxCell id="knowledgeRetrieval" value="知识检索引擎" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="237.5" y="264" width="95" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="semanticMatching" value="语义匹配" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="347.5" y="264" width="95" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="contextBuilding" value="上下文构建" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="237.5" y="300" width="95" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="knowledgeFusion" value="知识融合" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="347.5" y="300" width="95" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ragOutput" value="增强知识输出" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="360" y="305" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- CoT模块 -->
+        <mxCell id="cotModule" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;arcSize=15;shadow=1;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="230" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cot-label" value="CoT 推理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13;fontStyle=1;arcSize=15;" vertex="1" parent="1">
+          <mxGeometry x="505" y="230" width="190" height="24" as="geometry" />
+        </mxCell>
+        
+        <!-- CoT组件 -->
+        <mxCell id="reasoningChain" value="推理链构建" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="500" y="264" width="88" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="stepByStep" value="逐步推理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="605" y="264" width="88" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="logicalVerification" value="逻辑验证" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="500" y="300" width="88" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pathGeneration" value="路径生成" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="605" y="300" width="88" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="cotOutput" value="推理路径输出" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="940" y="305" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- 协同推理层 -->
+        <mxCell id="collaborativeLayer" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#dddddd;shadow=1;strokeWidth=1;arcSize=15;" vertex="1" parent="1">
+          <mxGeometry x="200" y="363" width="880" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="collaborativeLayer-label" value="RAG+CoT协同推理层" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#dddddd;fontSize=14;fontStyle=1;fontColor=#333333;shadow=1;strokeWidth=1;align=center;verticalAlign=middle;arcSize=15;" vertex="1" parent="1">
+          <mxGeometry x="60" y="361" width="120" height="160" as="geometry" />
+        </mxCell>
+        
+        <!-- 协同机制组件 -->
+        <mxCell id="gateway" value="门控网络" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="381" width="88" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="attention" value="注意力机制" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="325" y="381" width="88" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="fusion" value="知识融合" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="430" y="381" width="88" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="iterative" value="迭代优化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="535" y="381" width="88" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="validation" value="结果验证" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="640" y="381" width="88" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="explanation" value="可解释性" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="745" y="381" width="88" height="28" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="collaborativeOutput" value="协同推理结果" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;arcSize=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="480" y="440" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- 输出层 -->
+        <mxCell id="outputLayer" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#dddddd;shadow=1;strokeWidth=1;arcSize=15;" vertex="1" parent="1">
+          <mxGeometry x="200" y="550" width="880" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="outputLayer-label" value="智能决策输出" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#dddddd;fontSize=14;fontStyle=1;fontColor=#333333;shadow=1;strokeWidth=1;align=center;verticalAlign=middle;arcSize=15;" vertex="1" parent="1">
+          <mxGeometry x="60" y="550" width="120" height="85" as="geometry" />
+        </mxCell>
+        
+        <!-- 输出项目 -->
+        <mxCell id="faultAnalysis" value="故障分析报告" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="210" y="570" width="125" height="45" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rootCause" value="因果推理链条" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="365" y="570" width="125" height="45" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="repairStrategy" value="检修策略建议" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="570" width="125" height="45" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="riskAssessment" value="风险评估预警" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="675" y="570" width="125" height="45" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="reasoningPath" value="决策支持系统" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="830" y="570" width="125" height="45" as="geometry" />
+        </mxCell>
+        
+        <!-- 知识库 -->
+        <mxCell id="knowledgeBase" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#dddddd;shadow=1;strokeWidth=1;arcSize=15;" vertex="1" parent="1">
+          <mxGeometry x="200" y="680" width="880" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="knowledgeBase-label" value="知识库" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B3E5FC;strokeColor=#dddddd;fontSize=14;fontStyle=1;fontColor=#333333;shadow=1;strokeWidth=1;align=center;verticalAlign=middle;arcSize=15;" vertex="1" parent="1">
+          <mxGeometry x="60" y="680" width="120" height="85" as="geometry" />
+        </mxCell>
+        
+        <!-- 知识库组件 -->
+        <mxCell id="faultKG" value="故障知识图谱" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="225" y="700" width="110" height="45" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="caseLibrary" value="案例库" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="365" y="700" width="110" height="45" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="standardLibrary" value="标准库" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="505" y="700" width="110" height="45" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="expertRules" value="专家规则" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="645" y="700" width="110" height="45" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="semanticVectors" value="语义向量" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;arcSize=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="785" y="700" width="110" height="45" as="geometry" />
+        </mxCell>
+        
+        <!-- 连接线 -->
+        <mxCell id="flow1" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#1976D2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="160" as="sourcePoint" />
+            <mxPoint x="580" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="flow2" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#E91E63;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1000" y="160" as="sourcePoint" />
+            <mxPoint x="1000" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="flow3" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#FF9800;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="320" as="sourcePoint" />
+            <mxPoint x="680" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="flow4" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#9C27B0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="480" as="sourcePoint" />
+            <mxPoint x="680" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="flow5" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#009688;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="640" as="sourcePoint" />
+            <mxPoint x="680" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 反馈循环 -->
+        <mxCell id="feedback" value="反馈循环" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#FF5722;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1200" y="480" as="sourcePoint" />
+            <mxPoint x="1200" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1300" y="480" />
+              <mxPoint x="1300" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- 创新点标注 -->
+        <mxCell id="innovation1" value="创新点1:&#xa;RAG+CoT深度融合" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFECB3;strokeColor=#FF8F00;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="380" width="80" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="innovation2" value="创新点2:&#xa;门控注意力机制" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFECB3;strokeColor=#FF8F00;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="460" width="80" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="innovation3" value="创新点3:&#xa;迭代优化推理" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFECB3;strokeColor=#FF8F00;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="540" width="80" height="60" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

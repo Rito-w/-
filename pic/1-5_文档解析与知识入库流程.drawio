@@ -1,0 +1,83 @@
+<mxfile host="65bd71144e">
+    <diagram name="文档解析与知识入库流程" id="document-processing">
+        <mxGraphModel dx="906" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="800" math="0" shadow="1">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="input_docs" value="文档输入" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#E8F5E8;strokeColor=#82B366;fontColor=#333333;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="100" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="doc_stats" value="• 故障案例: 1084个PDF&#xa;• 标准规程: 3498个文档&#xa;• 运维记录数据&#xa;• 专家知识资料" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=10;fontColor=#333333;align=left;" parent="input_docs" vertex="1">
+                    <mxGeometry y="30" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="parsing_engine" value="MinerU解析引擎" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#333333;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="100" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="parsing_features" value="• OCR文字识别&#xa;• 表格结构提取&#xa;• 图文关联配对&#xa;• Markdown输出" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=10;fontColor=#333333;align=left;" parent="parsing_engine" vertex="1">
+                    <mxGeometry y="30" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="knowledge_extraction" value="知识抽取" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#E1F5FE;strokeColor=#6C8EBF;fontColor=#333333;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="100" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="extraction_output" value="• 实体识别(NER)&#xa;• 关系抽取(RE)&#xa;• 三元组生成&#xa;• F1≥0.85" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=10;fontColor=#333333;align=left;" parent="knowledge_extraction" vertex="1">
+                    <mxGeometry y="30" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="vectorization" value="向量化索引" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#333333;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="100" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="vector_features" value="• SynCSE语义表示&#xa;• FAISS高效索引&#xa;• 混合检索支持&#xa;• 延迟≤2s" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=10;fontColor=#333333;align=left;" parent="vectorization" vertex="1">
+                    <mxGeometry y="30" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="knowledge_storage" value="多数据库存储" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#F0F0F0;strokeColor=#666666;fontColor=#333333;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="280" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="storage_components" value="" style="html=1;fillColor=none;strokeColor=none;" parent="knowledge_storage" vertex="1">
+                    <mxGeometry y="30" width="400" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="graph_db" value="图数据库&#xa;(Neo4j)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#333333;fontSize=10;shadow=1;" parent="storage_components" vertex="1">
+                    <mxGeometry x="11" y="10" width="80" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="vector_db" value="向量库&#xa;(FAISS)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#333333;fontSize=10;shadow=1;" parent="storage_components" vertex="1">
+                    <mxGeometry x="111" y="10" width="80" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="doc_db" value="文档库&#xa;(MongoDB)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#333333;fontSize=10;shadow=1;" parent="storage_components" vertex="1">
+                    <mxGeometry x="211" y="10" width="80" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="cache_db" value="缓存&#xa;(Redis)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontColor=#333333;fontSize=10;shadow=1;" parent="storage_components" vertex="1">
+                    <mxGeometry x="311" y="10" width="80" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="storage_desc" value="知识图谱    向量索引    原文档    高速缓存" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#666666;align=center;" parent="storage_components" vertex="1">
+                    <mxGeometry x="20" y="65" width="360" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="api_services" value="API服务接口" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#E8F5E8;strokeColor=#82B366;fontColor=#333333;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="280" width="300" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="api_endpoints" value="• /api/v1/upload/pdf (单文档)&#xa;• /api/v1/upload/batch (批量)&#xa;• /api/v1/search (混合检索)&#xa;• /api/v1/documents (文档管理)&#xa;• /api/v1/images (图片服务)" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=10;fontColor=#333333;align=left;" parent="api_services" vertex="1">
+                    <mxGeometry y="30" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=2;endArrow=classic;" parent="1" source="input_docs" target="parsing_engine" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=2;endArrow=classic;" parent="1" source="parsing_engine" target="knowledge_extraction" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=2;endArrow=classic;" parent="1" source="knowledge_extraction" target="vectorization" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=2;endArrow=classic;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vectorization" target="knowledge_storage" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="900" y="200" as="sourcePoint"/>
+                        <mxPoint x="400" y="280" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="900" y="220"/>
+                            <mxPoint x="400" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=2;endArrow=classic;" parent="1" source="knowledge_storage" target="api_services" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

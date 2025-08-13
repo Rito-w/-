@@ -1,0 +1,127 @@
+<mxfile host="app.diagrams.net" modified="2024-08-13T10:00:00.000Z" agent="Qoder-AI" version="24.0.0" type="device">
+  <diagram id="system-architecture" name="系统架构图">
+    <mxGraphModel dx="2037" dy="971" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- 标题 -->
+        <mxCell id="title" value="技术架构图 &gt; 智能化业务处理平台" style="fillColor=#4DA1F5;strokeColor=none;shadow=1;gradientColor=none;fontSize=16;align=left;spacingLeft=50;fontColor=#ffffff;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="40" width="1000" height="45" as="geometry" />
+        </mxCell>
+        
+        <!-- 云平台容器 -->
+        <mxCell id="cloud-container" value="&lt;b&gt;云服务平台&lt;/b&gt;" style="fillColor=#F6F6F6;strokeColor=none;shadow=0;gradientColor=none;fontSize=14;align=left;spacing=10;fontColor=#717171;verticalAlign=top;spacingTop=-4;fontStyle=0;spacingLeft=40;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="120" width="700" height="500" as="geometry" />
+        </mxCell>
+        
+        <!-- 前端层 -->
+        <mxCell id="frontend-zone" value="前端应用层" style="rounded=1;absoluteArcSize=1;arcSize=2;html=1;strokeColor=none;gradientColor=none;shadow=0;fontSize=12;fontColor=#9E9E9E;align=left;verticalAlign=top;spacing=10;spacingTop=-4;fillColor=#E8F5E8;" vertex="1" parent="1">
+          <mxGeometry x="370" y="160" width="280" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="web-app" value="Web应用" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fillColor=#ffffff;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="390" y="190" width="110" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mobile-app" value="移动应用" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fillColor=#ffffff;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="520" y="190" width="110" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- API网关层 -->
+        <mxCell id="api-gateway-zone" value="API网关层" style="rounded=1;absoluteArcSize=1;arcSize=2;html=1;strokeColor=none;gradientColor=none;shadow=0;fontSize=12;fontColor=#9E9E9E;align=left;verticalAlign=top;spacing=10;spacingTop=-4;fillColor=#FFE6CC;" vertex="1" parent="1">
+          <mxGeometry x="370" y="270" width="280" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="api-gateway" value="API网关" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fillColor=#ffffff;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="440" y="300" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 业务服务层 -->
+        <mxCell id="business-services-zone" value="业务服务层" style="rounded=1;absoluteArcSize=1;arcSize=2;html=1;strokeColor=none;gradientColor=none;shadow=0;fontSize=12;fontColor=#9E9E9E;align=left;verticalAlign=top;spacing=10;spacingTop=-4;fillColor=#E1F5FE;" vertex="1" parent="1">
+          <mxGeometry x="370" y="380" width="430" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="user-service" value="用户服务" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fillColor=#ffffff;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="390" y="420" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="order-service" value="订单服务" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fillColor=#ffffff;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="490" y="420" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="payment-service" value="支付服务" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fillColor=#ffffff;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="590" y="420" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="notification-service" value="消息服务" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fillColor=#ffffff;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="690" y="420" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- 数据存储层 -->
+        <mxCell id="data-storage-zone" value="数据存储层" style="rounded=1;absoluteArcSize=1;arcSize=2;html=1;strokeColor=none;gradientColor=none;shadow=0;fontSize=12;fontColor=#9E9E9E;align=left;verticalAlign=top;spacing=10;spacingTop=-4;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="370" y="510" width="430" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mysql-db" value="MySQL" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fillColor=#ffffff;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="390" y="540" width="80" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="redis-cache" value="Redis" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fillColor=#ffffff;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="490" y="540" width="80" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="elasticsearch" value="Elasticsearch" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fillColor=#ffffff;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="590" y="540" width="90" height="35" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="file-storage" value="文件存储" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fillColor=#ffffff;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="700" y="540" width="80" height="35" as="geometry" />
+        </mxCell>
+        
+        <!-- 外部用户 -->
+        <mxCell id="external-systems" value="外部用户 &amp; 系统" style="fillColor=#FFEEEE;strokeColor=#d6b656;shadow=0;gradientColor=none;fontSize=12;fontColor=#666666;align=left;verticalAlign=top;spacing=10;spacingTop=-4;fontStyle=0;spacingLeft=20;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="200" width="250" height="300" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="customer" value="客户用户" style="strokeColor=#dddddd;fillColor=#ffffff;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="80" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="admin" value="管理员" style="strokeColor=#dddddd;fillColor=#ffffff;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="180" y="240" width="80" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="third-party" value="第三方系统" style="strokeColor=#dddddd;fillColor=#ffffff;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="130" y="320" width="80" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- 连接线 -->
+        <mxCell id="flow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=2;" edge="1" parent="1" source="customer" target="web-app">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=2;" edge="1" parent="1" source="admin" target="mobile-app">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=2;" edge="1" parent="1" source="web-app" target="api-gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=2;" edge="1" parent="1" source="mobile-app" target="api-gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=2;" edge="1" parent="1" source="api-gateway" target="user-service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#4284F3;strokeWidth=2;" edge="1" parent="1" source="user-service" target="mysql-db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
